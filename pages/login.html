@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Log in</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../js/login_validation.js"></script>
+</head>
+<body>
+    
+    <header><div><a href="home.html"> <img src="../img/logo2.jpeg" height="170" width="190" class="logo"/></a></div>
+<nav>
+<ul>
+    <li><a href="home.html" >HOME</a>
+<li><a href="aboutus.html">ABOUT US</a></li>
+
+</ul>
+</nav>
+</header>
+    
+    
+	
+<div class="wrapper">
+	
+	<div class="main_container">
+			<div class="form">
+                <h1 class="label">User Login</h1>
+				<form  action="home.html" onsubmit="return validate(event);">
+                    
+					<div class="form_wrap">
+						<label for="uname">Username:</label>
+						<div class="input_field">
+							<input type="text" class="input" name="username" id="uname">
+							<i class="fas fa-user"></i>
+						</div>
+						<div class="error_msg" id="un_err_msg"></div>
+					</div>
+					<div class="form_wrap">
+						<label for="password">Password:</label>
+						<div class="input_field">
+							<input type="password" class="input" name="password" id="password">
+							<i class="fas fa-key"></i>
+						</div>
+						<div class="error_msg" id="pw_err_msg"></div>
+					</div>
+                    
+            <p class="rememberme"><input type="checkbox" name="gender" value="Remember me " checked >Remember Me</p>
+					<div class="form_wrap">
+						<input type="submit" value="Login" >
+					</div>
+                       <p class="signup_p"> Don't have account?   <a href="signup.html">  Create One Now !</a> </p>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+    
+    
+  <footer id ="footer">
+  <div id="center">
+    <p>
+ <p>
+  <a href="https://twitter.com/login?lang=en"><img src="../img/tw.png" hight="40px" width="40px"/></a>
+  |<a href="https://www.instagram.com/accounts/login/ "><img src="../img/ins.png"hight="40px" width="40px"/></a> 
+  |<a href="https://www.whatsapp.com/"><img src="../img/in.png"hight="40px" width="40px"/></a></p>
+ <p>
+    <em>Better Future 2021 Copyright &copy; </em>
+  
+  </p>
+  </p>
+</p>
+</div>
+</div>
+</footer>
+    
+</body>
+</html>
