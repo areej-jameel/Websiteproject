@@ -1,0 +1,228 @@
+
+header img{
+    padding-left:6%;
+    }
+     
+header{
+background-color:white;
+/*padding-top:1%;*/
+padding-bottom:1%;
+border-bottom: 3px solid #e4bad4;
+overflow: visible;
+z-index: 1;    
+position: fixed; /* Set the navbar to fixed position */
+ top: 0px;  
+width: 100%; /* Full width */}
+
+header nav ul{
+margin:1%;
+padding-bottom:1%;
+position: absolute;
+right:6%;
+top: 40%;
+font-size:130%; 
+float:center;
+    font-family:Lucida Console;
+}
+header nav li{
+display:inline;
+  
+}
+nav a{
+color:#e4bad4;
+  background-color:white; text-decoration:none;
+border: 4px solid #e4bad4; padding: 5px 20px;
+}
+nav a:hover{
+background-color: white;
+color:#e4bad4;
+font-weight: bold;
+font-size:150%;}
+    
+       
+       
+#footer {
+ height:0.8%;
+ width:100%;
+ position: relative;
+ top:210px;
+ background-color:#e4bad4;
+ margin-top:35px;
+ color: white;
+ text-align: center;
+ border-top: 3px solid #e4bad4;
+padding-bottom: 1%;
+      padding-top: 1%;
+
+}
+
+
+
+#center  a{
+  margin: 5px;
+  text-decoration: none;
+  color:white;
+}      
+
+
+
+body {
+  margin-top: 50px;
+  justify-content: center;
+    background-image: url(../img/background.jpeg);
+    z-index: 1;
+         margin:0%;
+    padding: 0%;
+    overflow: scroll;
+  
+}
+
+
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#header {
+  padding: 10px;
+  color: #d36c6c;
+  font-size: 18pt;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  background-color:#92a1d1;
+}
+#container {
+   width: 780px;
+    position: relative;
+    top:205.5px;
+    left: 376.5px;
+    
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #247BA0;
+    font-family: sans-serif;
+    font-size: 12pt;
+    
+}
+#weekdays div {
+  width: 90px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 77.3px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color:#e8f4fa;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color:hotpink;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 3%;
+  background-color:lavenderblush;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+  color:darkgoldenrod;
+   
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton, #closeButton {
+  background-color: #92a1d1;
+}
+#eventText {
+  font-size: 14px;
+     color:darkmagenta;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 98.9vw;
+  height: 132.4vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+
+h1 {
+    text-align: center;
+	font-size: 25pt;
+	color:cadetblue;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+#errormassage{
+    font-size:10pt;
+    font-family: sans-serif;
+    color: red;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    bottom:15px;
+}
+
